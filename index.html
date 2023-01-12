@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+        <a href="" class="logo">Al-Waleed<span> Energy</span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about us</a>
+            <a href="#type">types</a>
+            <a href="#branches">branches</a>
+            <a href="#project">project</a>
+            <a href="#services">services</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+            <i class="fas fa-user" onclick="showform()"></i>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="What you looking for...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form">
+        <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remmember"> remember me</label>
+            <p>forget password? <a href="">click here</a></p>
+            <p>don't have acount? <a href="">sign up</a></p>
+        </form>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Al-Waleed Renewable Energy Company</h3>
+            <p>Click on the circles below to see some of our projects</p>
+            <a href="#about" class="btn">About Us</a>
+        </div>
+
+        <div class="controls">
+            <span class="video-btn blue" data-src="images/solar.mp4"></span>
+            <span class="video-btn" data-src="images/wind.mp4"></span>
+            <span class="video-btn" data-src="images/hydro.mp4"></span>
+            <span class="video-btn" data-src="images/bio.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/hydrogen.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> <span>us</span></h1>
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="images/a1.png" alt="">
+            </div>
+    
+            <div class="content">
+                <h3>Why should you choose us?</h3>
+                <p>Al-Waleed is a global leader in renewable energy and sustainable development. Over the past decade, we have established a global protocol for the production, export and use of green hydrogen, creating commercially viable solutions in clean energy, sustainable real estate and clean technology in every country in the world.</p>
+                <p>Headquartered in Jordan in Zarqa Governorate, we develop renewable energy projects, achieve low carbon urban development and promote clean technology innovation. We spread awareness about the global climate crisis, and provide global knowledge and industry platforms.</p>
+                <p>AtAl-Waleed, we support the world's transition to green energy. We aim to be a role model in the industry of energy and environment solutions and to reduce the carbon footprint at a low cost.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="gallary" id="type">
+
+        <h1 class="heading">
+            <span>type</span>
+            <span>of</span>
+            <span>renewable</span>
+            <span>energy</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="images/t2.png" alt="">
+                <div class="content">
+                    <h3>solar energy</h3>
+                    <p>What is solar energy systems and what are its uses?</p>
+                    <a href="t1.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/t1.png" alt="">
+                <div class="content">
+                    <h3>wind energy</h3>
+                    <p>What are wind energy systems and what are their uses?</p>
+                    <a href="t2.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/t3.png" alt="">
+                <div class="content">
+                    <h3>bio energy</h3>
+                    <p>What are wind bio energy systems and what are their uses?</p>
+                    <a href="t3.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/t4.png" alt="">
+                <div class="content">
+                    <h3>geothermal energy</h3>
+                    <p>What are geothermal energy systems and what are their uses?</p>
+                    <a href="t4.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/t5.png" alt="">
+                <div class="content">
+                    <h3>Hydropower</h3>
+                    <p>What are Hydropower systems and what are their uses?</p>
+                    <a href="t5.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/t666.png" alt="">
+                <div class="content">
+                    <h3>hydrogen energy</h3>
+                    <p>What is hydrogen and what are its types and uses? Does hydrogen represent humanity's salvation from the effects of climate change?</p>
+                    <a href="t6.html" class="btn">See more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="packages" id="branches">
+
+        <h1 class="heading">
+            <span>branches</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="images/b1.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>jordan</h3>
+                    <p>We are located in Jordan in all governorates and we provide all our services there. Click on the button to see the location</p>
+                    <a href="https://www.google.com/maps/place/Jordan/@31.2575586,34.4806922,7z/data=!3m1!4b1!4m5!3m4!1s0x15006f476664de99:0x8d285b0751264e99!8m2!3d31.3031951!4d36.7870331" class="btn">see location</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/b2.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>saudi arabia</h3>
+                    <p>We are located in saudi arabia in all governorates and we provide all our services there. Click on the button to see the location</p>
+                    <a href="https://www.google.com/maps/place/Saudi+Arabia/@23.8710365,34.4094095,5z/data=!3m1!4b1!4m5!3m4!1s0x15e7b33fe7952a41:0x5960504bc21ab69b!8m2!3d23.885942!4d45.079162" class="btn">see location</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/b3.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>qatar</h3>
+                    <p>We are located in qatar in all governorates and we provide all our services there At what time. Click on the button to see the location</p>            
+                    <a href="https://www.google.com/maps/place/Qatar/@25.3407139,49.898017,8z/data=!3m1!4b1!4m5!3m4!1s0x3e45c534ffdce87f:0x1cfa88cf812b4032!8m2!3d25.354826!4d51.183884" class="btn">see location</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/b4.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>UAE</h3>
+                    <p>We are located in United Emirates in all governorates and we provide all our services there. Click on the button to see the location</p>               
+                    <a href="https://www.google.com/maps/place/United+Arab+Emirates/@24.3361293,51.3133874,7z/data=!3m1!4b1!4m5!3m4!1s0x3e5e48dfb1ab12bd:0x33d32f56c0080aa7!8m2!3d23.424076!4d53.847818" class="btn">see location</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p5.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>oman</h3>
+                    <p>We are located in oman in all governorates and we provide all our services there At what time. Click on the button to see the location</p>           
+                    <a href="https://www.google.com/maps/place/Oman/@21.3735176,50.8521644,6z/data=!3m1!4b1!4m5!3m4!1s0x3dd69f66a9d59bbf:0x3a064c7665b1a817!8m2!3d21.4735329!4d55.975413" class="btn">see location</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/b6.png" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>United kingdom</h3>
+                    <p>We are located in United kingdom in all governorates and we provide all our services there. Click on the button to see the location</p>                  
+                    <a href="https://www.google.com/maps/place/United+Kingdom/@54.1018958,-15.0186213,5z/data=!3m1!4b1!4m5!3m4!1s0x25a3b1142c791a9:0xc4f8a0433288257a!8m2!3d55.378051!4d-3.435973" class="btn">see location</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book" id="project">
+        <h1 class="heading">
+            <span>some</span>
+            <span>projects</span>
+        </h1>
+        <div class="heading">
+			<h2>our Amazing Work</h2>
+			<p>Most common methods for designing renewable energy system that work well on desktop is <br> responsive and adaptive design</p>
+		</div>
+
+		<div class="portfolio-content">
+			<a href="">
+			<div class="col">
+				<img src="images/h3.png">
+				<div class="layer">
+					<h3>renewable energy project</h3>
+					<h5>wind</h5>
+                    <p>The Aqaba Wind Power Plant is the first operating wind power plant on a commercial scale in the Middle East. The station, located in the Hashemite Kingdom of Jordan, with a capacity of 117 megawatts, contributed to an increase in the total capacity of generating electricity in Jordan by 3%. This project, which is estimated to cost $287 million, was put into operation in September 2015, and was officially inaugurated in the same year in the presence of the Jordanian monarch, King Abdullah. The second bin Al-Hussein.
+
+                        The Tafila Wind Power Plant was developed and operated by the Jordan Wind Renewable Energy Project Company, which includes Alwaleed With a total investment volume of about $6.1 billion.</p>
+				</div>
+			</div>
+		    </a>
+			<a href="">
+			<div class="col">
+				<img src="images/t2.png">
+				<div class="layer">
+					<h3>renewable energy project</h3>
+					<h5>solar</h5>
+                    <p>The Zarqa solar photovoltaic power plant project in the Hashemite area is one of the renewable energy projects of the Ministry of Energy, and the first projects in Zarqa Governorate for renewable energy.
+                        The station uses solar energy through photovoltaic (PV) technology to generate electricity.
+                        , the energy it will produce will be purchased through an agreement with the Jordan Energy Purchase Company for a period of up to 25 years.
+                        The station consists of 2.2 million solar panels, built on an area of ​​6.6 km2, and its location was carefully selected and secured by a specialized Jordanian technical team, in order to achieve the highest possible quality of electric energy production.
+                        The project provided a world record tariff in the solar PV sector of 1.2 cents/kWh.</p>
+                    </p>
+				</div>
+			</div>
+		    </a>
+			<a href="">
+			<div class="col">
+				<img src="images/h2.png">
+				<div class="layer">
+					<h3>renewable energy project</h3>
+					<h5>green hydrogen</h5>
+                    <p>Expanding green hydrogen projects to reach “zero carbon”
+                        Green hydrogen is an environmentally compatible chemical energy storage material
+                        In 2021, the Intergovernmental Panel on Climate Change (IPCC) issued warnings about the urgent need to shift from dependence on polluting fossil fuels as a source of energy to other energy sources free of air polluting emissions, to stave off the effects of the worst climate crisis the world may witness in an era post-industrial.
+                        
+                        Among the solutions proposed to achieve this goal, green hydrogen was one of the potential solutions for use in the most energy-intensive sectors, such as the aviation and marine shipping sectors.
+                        Therefore, we launched a hydrogen production project in South Africa, which is still being worked on</p>
+				</div>
+			</div>
+		    </a>
+		</div>
+    </section>
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>services</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="images/download (11).png" alt="">
+                <h3>solar systems</h3>
+                <p>Building solar energy systems of various sizes with high professionalism and low cost compared to competitors</p>
+            </div>
+            <div class="box">
+                <img src="images/downloadd.png" alt="">
+                <h3>wind systems</h3>
+                <p>Building wind energy systems of various sizes with high professionalism and low cost compared to competitors</p>
+            </div>
+            <div class="box">
+                <img src="images/6132383.png" alt="">
+                <h3>green hydrogen systems</h3>
+                <p>Conducting a feasibility study for green hydrogen production projects and supervising them from start to finish</p>
+            </div>
+            <div class="box">
+                <img src="images/download (33).png" alt="">
+                <h3>electrical networks</h3>
+                <p>Building electrical networks between major cities and delivering electricity to isolated areas</p>
+            </div>
+            <div class="box">
+                <img src="images/doownload (55).png" alt="">
+                <h3> charging stations</h3>
+                <p>Building very fast charging stations for electric cars and charging stations for hydrogen cars</p>
+            </div>
+            <div class="box">
+                <img src="images/download (44).png" alt="">
+                <h3>Recycling</h3>
+                <p>Recycling parts of old power stations at a low cost and spreading awareness about recycling</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------->
+
+   
+
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>review</span>
+        </h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/r2.png" alt="">
+                        <h3>ali houji</h3>
+                        <p>I have dealt with a lot of companies, but I did not find such a company in terms of speed of completion and workmanship.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/r1.png" alt="">
+                        <h3>diaa hudaib</h3>
+                        <p>The best energy company, they provide services with high professionalism and reasonable prices Thanks for everything.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/r3.png" alt="">
+                        <h3>ramadan qasem</h3>
+                        <p>Thank you from the heart because of you, clean energy has been delivered to my remote wealth. You are really the best. good luck</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/r4.png" alt="">
+                        <h3>hassan badran</h3>
+                        <p>I was suffering from a high electricity bill, but now because of you, I am selling electricity to the government</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!----------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>contact</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/a2.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+  
+    <!------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about me</h3>
+                <p>Names Walid Hakam Abu Zaid is interested in the field of green hydrogen and programming</p>
+            </div>
+            <div class="box">
+                <h3>barnch</h3>
+                <a href="#branches">jordan</a>
+                <a href="#branches">saudi arabia</a>
+                <a href="#branches">qatar</a>
+                <a href="#branches">UAE</a>
+                <a href="#branches">oman</a>
+                <a href="#branches">United Kingdom</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#about">About Us</a>
+                <a href="#types">Types</a>
+                <a href="#branches">Branches</a>
+                <a href="#project">Project</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/waleed.abuzaid.35?mibextid=ZbWKwL">facebook</a>
+                <a href="https://github.com/Githubwaleedabuzaid">Github</a>
+                <a href="https://www.linkedin.com/in/waleed-hakam-959028260">linkedin</a>
+            </div>
+        </div>
+        <h1 class="created">created by <span>Waleed Abu Zaid</span> all right reserved</h1>
+        <h1 class="created">Email: <span>wlydabwzyd885@gmail.com</span></h1>
+        <h1 class="created">Phone: <span>+962787524596</span> </h1>
+        <ruby>
+            <rb>Waleed</rb>
+            <rt>Developer</rt>
+        </ruby>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="re.js"></script>
+</body>
+</html>
